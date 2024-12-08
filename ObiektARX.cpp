@@ -72,16 +72,33 @@ public:
     }
 
     //sygnał wejściowy
-    void setUi(double uii[)
+    void setUi(double uii)
     {
         ui.push_back(uii);
         ui.erase(ui.begin());
     }
-    double getUi(int ii) { return ui[ii]; }
+    double getUi(int chwilaCzasowa) { return ui[chwilaCzasowa]; }
     
     double obliczWyjscie(double uii)
     {
         
+    }
+    vector<double> splotWektorowy(const vector<double>& x, const vector<double>& h) 
+    {        
+        size_t n = x.size();
+        size_t m = h.size();
+        vector<double> iloczyn(n + m - 1, 0.0);
+        for (size_t i = 0; i < iloczyn.size(); ++i) 
+        {            
+            for (size_t j = 0; j < h.size(); ++j) 
+            {
+                if (i >= j && (i - j) < x.size()) 
+                {
+                    iloczyn[i] += x[i - j] * h[j];
+                }
+            }
+        }
+        return iloczyn;
     }
 };
 
