@@ -1,0 +1,11 @@
+debug/generator.o
+debug/main.o
+debug/mainwindow.o
+debug/obiektarx.o
+debug/regulator.o
+debug/symulator.o
+debug/symulatoruar.o
+debug/warstwagui.o
+debug/moc_mainwindow.o
+debug/moc_symulatoruar.o
+debug/moc_warstwagui.o

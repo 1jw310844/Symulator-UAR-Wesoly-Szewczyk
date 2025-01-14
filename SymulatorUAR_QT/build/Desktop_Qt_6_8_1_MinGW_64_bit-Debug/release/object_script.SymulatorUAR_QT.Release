@@ -1,0 +1,13 @@
+release/generator.o
+release/main.o
+release/mainwindow.o
+release/obiektarx.o
+release/regulator.o
+release/symulator.o
+release/symulatoruar.o
+release/moc_generator.o
+release/moc_mainwindow.o
+release/moc_obiektarx.o
+release/moc_regulator.o
+release/moc_symulator.o
+release/moc_symulatoruar.o
